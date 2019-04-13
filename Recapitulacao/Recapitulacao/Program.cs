@@ -29,7 +29,10 @@ namespace Recapitulacao
             Console.WriteLine(preco.ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine(linha[0]);
             Console.WriteLine(linha[1]);
-            Console.WriteLine(linha[2]);
+
+            double altura = double.Parse(linha[2]);
+
+            Console.WriteLine(altura.ToString("F2", CultureInfo.InstalledUICulture));
         }
     }
 }

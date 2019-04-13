@@ -16,6 +16,7 @@ namespace Exercicio04
             Console.WriteLine("NUMBER: " + codigo);
             double salario = horas * valor;
             Console.WriteLine("SALARY: U$ " + salario.ToString("F2"));
+
         }
     }
 }

@@ -6,7 +6,23 @@ namespace ExercicioCond04
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Informe a Hora Inicial:");
+            int horaInicial = int.Parse(Console.ReadLine());
+            Console.WriteLine("Informe a Hora Final");
+            int horaFinal = int.Parse(Console.ReadLine());
+
+            int duracao;
+
+            if (horaInicial >= horaFinal)
+            {
+                duracao = 24 - horaInicial + horaFinal;
+            }else
+            {
+                duracao = horaFinal - horaInicial;
+            }
+          
+            Console.WriteLine("O JOGO DUROU " + duracao + " HORA(S)");
         }
+
     }
 }

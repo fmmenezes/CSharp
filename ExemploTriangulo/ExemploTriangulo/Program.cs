@@ -20,11 +20,14 @@ namespace ExemploTriangulo
             y.Lb = double.Parse(Console.ReadLine());
             y.Lc = double.Parse(Console.ReadLine());
 
-            double p = (x.La + x.Lb + x.Lc) / 2;
-            double areaX = Math.Sqrt(p * (p - x.La) * (p - x.Lb) * (p - x.Lc));
+            //double p = (x.La + x.Lb + x.Lc) / 2;
+            //double areaX = Math.Sqrt(p * (p - x.La) * (p - x.Lb) * (p - x.Lc));
 
-            p = (y.La + y.Lb + y.Lc) / 2;
-            double areaY = Math.Sqrt(p * (p - y.La) * (p - y.Lb) * (p - y.Lc));
+            //p = (y.La + y.Lb + y.Lc) / 2;
+            //double areaY = Math.Sqrt(p * (p - y.La) * (p - y.Lb) * (p - y.Lc));
+
+            double areaX = x.CalculaArea();
+            double areaY = y.CalculaArea();
 
             Console.WriteLine("Area do triangulo X: " + areaX);
             Console.WriteLine("Area do triangulo Y: " + areaY);

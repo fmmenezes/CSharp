@@ -21,8 +21,8 @@ namespace A42Exercicio01
             p.Quantidade = int.Parse(Console.ReadLine());
 
             Console.WriteLine();
-            Console.WriteLine("Dados do produto: " + p.Nome + ", $ " + p.Preco.ToString("F2") + ", " + p.Quantidade + " unidades, Total: $ " + p.ValorTotalEmEstoque().ToString("F2"));
-
+            //Console.WriteLine("Dados do produto: " + p.Nome + ", $ " + p.Preco.ToString("F2") + ", " + p.Quantidade + " unidades, Total: $ " + p.ValorTotalEmEstoque().ToString("F2"));
+            Console.WriteLine("Dados do produto: " + p);
         }
     }
 }

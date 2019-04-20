@@ -14,16 +14,5 @@ namespace A42Exercicio01
         {
             return Quantidade * Preco;
         }
-
-        public override string ToString()
-        {
-            return Nome
-                + ", $ "
-                + Preco.ToString("F2")
-                + ", " + Quantidade
-                + " unidades, Total: $ "
-                + ValorTotalEmEstoque().ToString("F2");
-
-        }
     }
 }

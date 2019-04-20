@@ -24,6 +24,20 @@ namespace A42Exercicio01
             //Console.WriteLine("Dados do produto: " + p.Nome + ", $ " + p.Preco.ToString("F2") + ", " + p.Quantidade + " unidades, Total: $ " + p.ValorTotalEmEstoque().ToString("F2"));
             Console.WriteLine("Dados do produto: " + p);
 
+            Console.Write("Digite o numero de produtos a ser adicionado ao estoque: ");
+            //p.Quantidade = p.Quantidade + int.Parse(Console.ReadLine());
+            p.AdicionarProdutos(int.Parse(Console.ReadLine()));
+
+            Console.WriteLine("Dados atualizados: " + p);
+
+            Console.Write("Digite o numero de produtos a ser removido do estoque: ");
+            //p.Quantidade = p.Quantidade - int.Parse(Console.ReadLine());
+            int valor = int.Parse(Console.ReadLine());
+            p.RemoverProdutos(valor);
+
+
+            Console.WriteLine("Dados atualizados: " + p);
+
         }
     }
 }

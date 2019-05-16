@@ -25,5 +25,15 @@ namespace ExercicioFixacao60
         {
             return "Conta " + Numero + ", Titular: " + Titular + ", Saldo: $ " + Saldo;
         }
+
+        public void Deposito(double quantia)
+        {
+            Saldo = Saldo + quantia;
+        }
+
+        public void Saque(double quantia)
+        {
+            Saldo = Saldo - quantia - 5;
+        }
     }
 }

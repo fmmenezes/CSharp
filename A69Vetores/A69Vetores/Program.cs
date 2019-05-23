@@ -19,10 +19,11 @@ namespace A69Vetores
                 sum += vect[i];
 
             }
-
+            
             double avg = sum / n;
 
             Console.WriteLine("AVERAGE HEIGHT = " + avg.ToString("F2"));
+
 
             
         }

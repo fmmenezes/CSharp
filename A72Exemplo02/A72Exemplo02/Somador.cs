@@ -6,7 +6,8 @@ namespace A72Exemplo02
 {
     class Somador
     {
-        public static double Soma(double[] nums)
+        //public static double Soma(double[] nums)
+        public static double Soma(params double[] nums)
         {
             double sum = 0;
 
